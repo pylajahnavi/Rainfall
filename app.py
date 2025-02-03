@@ -26,7 +26,7 @@ if 'wind' not in st.session_state:
 
 def load_model():
     try:
-        with open('xgboost_model.pkl', 'rb') as file:
+        with open('random_forest_model.pkl', 'rb') as file:
             model_dict = pickle.load(file)
         return model_dict
     except FileNotFoundError:
